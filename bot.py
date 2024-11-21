@@ -29,7 +29,7 @@ line = putih + "~" * 50
 TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 
 if not TOKEN:
-    raise ValueError("Token bot tidak diset di variabel lingkungan.")
+    raise ValueError("The bot token is not set in the environment variable.")
 
 def decode_url_data(url):
     try:
