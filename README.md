@@ -4,8 +4,8 @@
 
 ## Run Termux
 ```
-git clone https://github.com/Copycat-izz-opp/Bot-Decode
-cd bot-decode
+git clone https://github.com/Copycat-izz-opp/Bot-Decode.git
+cd Bot-Decode
 ```
 ```
 pip install -r requirements.txt
