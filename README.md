@@ -4,7 +4,7 @@
 
 ## Run Termux
 ```
-git clone https://github.com/hokireceh/bot-decode.git
+git clone https://github.com/Copycat-izz-opp/Bot-Decode
 cd bot-decode
 ```
 ```
