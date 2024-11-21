@@ -61,8 +61,8 @@ def decode_url_data(url):
         formatted_data = ' '.join(formatted_data.split())
         return '```\n' + formatted_data + '\n```'.replace('\n', ' ')
     except Exception as e:
-        logger.error(f"Terjadi kesalahan saat mendecode URL: {e}")
-        return 'Terjadi kesalahan saat memproses URL.'
+        logger.error(f"An error occurred while decoding: {e}")
+        return 'An error occurred while decoding.'
 
 async def handle_message(update: Update, context):
     message_text = update.message.text
@@ -80,8 +80,8 @@ async def handle_message(update: Update, context):
         
         await update.message.reply_text(formatted_data, parse_mode=ParseMode.MARKDOWN_V2)
     except Exception as e:
-        logger.error(f"Terjadi kesalahan saat memproses pesan: {e}")
-        await update.message.reply_text('Terjadi kesalahan saat memproses pesan.')
+        logger.error(f"An error occurred while decoding: {e}")
+        await update.message.reply_text('An error occurred while decoding.')
 
 def main():
     application = Application.builder().token(TOKEN).build()
